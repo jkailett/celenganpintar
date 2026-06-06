@@ -2,7 +2,7 @@
 
 Financial Planning untuk Anak Muda Indonesia.
 
-Website: [celenganpintar.com](https://celenganpintar.com)
+Website: [yogaindra.com](https://yogaindra.com)
 
 ## Struktur
 
@@ -30,7 +30,7 @@ Website: [celenganpintar.com](https://celenganpintar.com)
 ## Tech Stack
 
 - **Hosting:** GitHub Pages
-- **Domain:** celenganpintar.com
+- **Domain:** yogaindra.com
 - **Stack:** HTML + CSS vanilla (no framework)
 - **Payment:** WhatsApp manual → TipTip
 - **Analytics:** (opsional)
