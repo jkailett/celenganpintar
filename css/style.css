@@ -1,0 +1,175 @@
+/* =========================================================
+   CELENGAN PINTAR — Financial Planning Hub
+   ========================================================= */
+:root {
+  --primary: #0d6b3e;
+  --primary-dark: #08492a;
+  --primary-light: #e8f5ee;
+  --accent: #f59e0b;
+  --accent-dark: #d97706;
+  --text: #1f2937;
+  --text-light: #6b7280;
+  --bg: #ffffff;
+  --bg-warm: #fefce8;
+  --bg-gray: #f9fafb;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* =========================================================
+   RESET
+   ========================================================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font);color:var(--text);line-height:1.7;background:var(--bg);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--primary);text-decoration:none}
+a:hover{color:var(--accent-dark)}
+ul{list-style:none}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+nav{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+nav .container{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.4rem;font-weight:800;color:var(--primary)}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:24px}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--text);transition:color .2s}
+.nav-links a:hover{color:var(--primary)}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{background:linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, #0f8b4e 100%);color:#fff;padding:80px 0 60px;text-align:center}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.2;margin-bottom:20px;max-width:800px;margin-left:auto;margin-right:auto}
+.hero p{font-size:1.15rem;opacity:.9;max-width:600px;margin:0 auto 32px;line-height:1.6}
+.hero .btn{background:var(--accent);color:#1f2937;padding:16px 40px;font-size:1.1rem;font-weight:700;border-radius:50px;display:inline-block;transition:transform .2s,box-shadow .2s}
+.hero .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,158,11,.4);color:#1f2937}
+.hero .sub{font-size:.85rem;opacity:.7;margin-top:16px}
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+section{padding:72px 0}
+.section-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;text-align:center;margin-bottom:16px}
+.section-sub{text-align:center;color:var(--text-light);max-width:600px;margin:0 auto 48px;font-size:1.05rem}
+
+/* =========================================================
+   PAIN POINTS
+   ========================================================= */
+.pain{background:var(--bg-gray)}
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.pain-card{background:var(--bg);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border-left:4px solid #ef4444}
+.pain-card .icon{font-size:2rem;margin-bottom:12px}
+.pain-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.pain-card p{font-size:.9rem;color:var(--text-light);line-height:1.6}
+
+/* =========================================================
+   OFFER (Rp100k)
+   ========================================================= */
+.offer{background:linear-gradient(135deg, var(--bg-warm) 0%, #fffbeb 100%);text-align:center}
+.offer-box{background:var(--bg);border-radius:var(--radius);padding:48px 32px;max-width:700px;margin:0 auto;box-shadow:var(--shadow-lg);border:2px solid var(--accent)}
+.offer-box .price{font-size:3rem;font-weight:800;color:var(--accent);margin:16px 0}
+.offer-box .price span{font-size:1rem;font-weight:400;color:var(--text-light)}
+.offer-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:left;margin:32px 0}
+.offer-features li{display:flex;gap:12px;align-items:flex-start;font-size:.9rem}
+.offer-features .check{color:var(--primary);font-weight:700;font-size:1.2rem;flex-shrink:0}
+.offer-box .btn{background:var(--accent);color:#1f2937;padding:16px 48px;font-size:1.1rem;font-weight:700;border-radius:50px;display:inline-block;transition:transform .2s}
+.offer-box .btn:hover{transform:translateY(-2px)}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.testi-card{background:var(--bg);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.testi-card .quote{font-size:.95rem;font-style:italic;margin-bottom:16px;color:var(--text)}
+.testi-card .author{font-size:.85rem;font-weight:600;color:var(--primary)}
+.testi-card .role{font-size:.8rem;color:var(--text-light)}
+
+/* =========================================================
+   BLOG
+   ========================================================= */
+.blog-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.blog-card{background:var(--bg);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:1px solid var(--border);transition:transform .2s}
+.blog-card:hover{transform:translateY(-4px)}
+.blog-card .tag{display:inline-block;background:var(--primary-light);color:var(--primary);padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:600;margin-bottom:12px}
+.blog-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.blog-card p{font-size:.88rem;color:var(--text-light);line-height:1.6}
+.blog-card a{color:var(--text)}
+.blog-card a:hover{color:var(--primary)}
+
+/* =========================================================
+   LEAD MAGNET
+   ========================================================= */
+.lead-magnet{background:linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);color:#fff;text-align:center}
+.lead-magnet h2{color:#fff}
+.lead-magnet .section-sub{color:rgba(255,255,255,.8)}
+.magnet-box{max-width:500px;margin:0 auto;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border-radius:var(--radius);padding:40px;border:1px solid rgba(255,255,255,.2)}
+.magnet-box .magnet-title{font-size:1.2rem;font-weight:700;margin-bottom:24px}
+.magnet-form{display:flex;flex-direction:column;gap:12px}
+.magnet-form input{padding:14px 18px;border-radius:8px;border:none;font-size:1rem;font-family:var(--font)}
+.magnet-form button{background:var(--accent);color:#1f2937;padding:14px;border:none;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .2s}
+.magnet-form button:hover{transform:translateY(-2px)}
+
+/* =========================================================
+   CTA FINAL
+   ========================================================= */
+.cta-final{text-align:center;background:var(--bg-gray)}
+.cta-final h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;margin-bottom:16px}
+.cta-final p{color:var(--text-light);max-width:500px;margin:0 auto 32px}
+.cta-final .btn{background:var(--primary);color:#fff;padding:18px 48px;font-size:1.1rem;font-weight:700;border-radius:50px;display:inline-block;transition:transform .2s}
+.cta-final .btn:hover{transform:translateY(-2px);color:#fff}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer{background:var(--primary-dark);color:rgba(255,255,255,.7);padding:40px 0;text-align:center;font-size:.85rem}
+footer a{color:var(--accent)}
+footer a:hover{color:#fff}
+
+/* =========================================================
+   LANDING PAGE — FORM SALES
+   ========================================================= */
+.sales-section{padding:64px 0}
+.sales-section:nth-child(even){background:var(--bg-gray)}
+.sales-content{max-width:720px;margin:0 auto}
+.sales-content h2{font-size:clamp(1.3rem,3vw,1.8rem);font-weight:800;margin-bottom:16px;line-height:1.3}
+.sales-content p{font-size:1.05rem;color:var(--text-light);line-height:1.8;margin-bottom:16px}
+.sales-content .highlight{background:var(--primary-light);border-radius:var(--radius);padding:24px;margin:24px 0;border-left:4px solid var(--primary)}
+.sales-content .highlight p{margin:0}
+.sales-content ul{margin:16px 0;padding:0}
+.sales-content ul li{padding:8px 0;padding-left:28px;position:relative;font-size:.95rem;color:var(--text)}
+.sales-content ul li::before{content:"✓";position:absolute;left:0;color:var(--primary);font-weight:700}
+
+/* =========================================================
+   PRODUCT PAGE
+   ========================================================= */
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:32px}
+.prod-card{background:var(--bg);border-radius:var(--radius);padding:36px 28px;box-shadow:var(--shadow);border:1px solid var(--border);text-align:center}
+.prod-card .icon{font-size:2.5rem;margin-bottom:12px}
+.prod-card h3{font-size:1.2rem;font-weight:700;margin-bottom:8px}
+.prod-card p{font-size:.9rem;color:var(--text-light);margin-bottom:16px}
+.prod-card .price-tag{font-size:1.5rem;font-weight:800;color:var(--primary);margin-bottom:16px}
+.prod-card .btn-sm{background:var(--primary);color:#fff;padding:10px 24px;border-radius:50px;font-weight:600;display:inline-block;font-size:.9rem}
+.prod-card .btn-sm:hover{color:#fff;background:var(--primary-dark)}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero{padding:48px 0 40px}
+  .hero h1{font-size:1.5rem}
+  section{padding:48px 0}
+  .container{padding:0 16px}
+  .offer-box{padding:32px 20px}
+}
